@@ -11,6 +11,6 @@ angular.module("MyNewApp",[])
 		}])
 		.factory("greetingService",[ function GreetingService(){
 			return {
-				message:"Hello from greeting service"
+				message:"Hello from greeting service test"
 			};
 		}])
