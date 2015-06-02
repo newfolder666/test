@@ -1,0 +1,19 @@
+<html>
+<head> 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+	<body>
+		<div ng-app="MyNewApp">
+			<div ng-controller="MyNewController as ctrl">
+				<h1>{{ctrl.greeting.message}}</h1>
+				<input type="text" ng-model="ctrl.greeting.message"/>
+				<input type="button" ng-click="ctrl.clickMe()" ng-show="ctrl.greeting.message" value="Click me"/>
+			</div>
+			<div ng-controller="MyNewController2 as ctrl2">
+				<h1>Message from MyNewController {{ctrl2.greeting2.message}}</h1>
+			</div>
+		</div>
+	</body>
+</html>
+
